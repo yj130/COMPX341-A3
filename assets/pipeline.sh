@@ -6,6 +6,7 @@ git add .
 
 echo "Enter your lucky number"
 read commit
+ [ -z "$commit" ] && echo "Empty"
 git commit -m $commit
 
 #git push
