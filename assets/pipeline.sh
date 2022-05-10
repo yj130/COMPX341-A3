@@ -4,11 +4,9 @@
 
 git add .
 
-echo "Enter your lucky number"
+echo "Please provide a commit message(Press 'Enter' to confirm)"
 read commit
- [ -z "$commit" ] && echo "Empty"
-git commit -m $commit
-
+ [ -z "$commit" ] && echo "Your commit is empty!" || git commit -m $commit
 #git push
 
 #npm run start 
