@@ -1,6 +1,6 @@
 #!/bin/sh
 #npm install
-if [ $(npm run build)=1];then
+if [ $(npm run build)==0 ];then
     echo 'Complied-time Error!'
     exit 2
 fi
