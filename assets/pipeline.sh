@@ -1,10 +1,8 @@
 #!/bin/sh
 #npm install
-if [ $(npm run build)==0 ];then
-    echo 'Complied-time Error!'
-    exit 2
-fi
-echo 'Complied-time passed!'
+#npm run build || exit 0
+
+#echo 'Complied-time passed!'
 git add .
 
 echo 'Please provide a commit message(Press 'Enter' to confirm)'
